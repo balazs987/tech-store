@@ -1,14 +1,15 @@
 import React from "react";
-import { ProductConsumer } from "../context";
+import Hero from "../components/Hero";
+import { Link } from "react-router-dom";
 
 function HomePage() {
   return (
     <React.Fragment>
-      <ProductConsumer>
-        {(value) => {
-          return <h1>Hello from home page</h1>;
-        }}
-      </ProductConsumer>
+      <Hero title="awesome gadgets" max="true">
+        <Link to="/products" className="main-link" style={{ margin: "2rem" }}>
+          our products
+        </Link>
+      </Hero>
     </React.Fragment>
   );
 }
