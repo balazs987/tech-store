@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "styled-components";
 import styled from "styled-components";
 
 function Title({ title, center }) {
