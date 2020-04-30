@@ -1,5 +1,7 @@
 import React from "react";
 import Hero from "../components/Hero";
+import Services from "../components/HomePage/Services";
+import Featured from "../components/HomePage/Featured";
 import { Link } from "react-router-dom";
 
 function HomePage() {
@@ -10,6 +12,8 @@ function HomePage() {
           our products
         </Link>
       </Hero>
+      <Services />
+      <Featured />
     </React.Fragment>
   );
 }
