@@ -10,7 +10,7 @@ function Product({ product }) {
       {(value) => {
         const { addToCart, setSingleProduct } = value;
         return (
-          <ProductWrapper className="col-10 mx-auto col-sm-8 col-md-6 col-lg-4 my3">
+          <ProductWrapper className="col-10 mx-auto col-sm-8 col-md-6 col-lg-4 my-3">
             <div className="card">
               <div className="img-container">
                 <img
