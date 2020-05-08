@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { FaSearch, FaCartPlus } from "react-icons/fa";
-import { ProductConsumer } from "../context";
-import styled from "styled-components";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { FaSearch, FaCartPlus } from 'react-icons/fa';
+import { ProductConsumer } from '../context';
+import styled from 'styled-components';
 
 function Product({ product }) {
   return (
@@ -17,7 +17,7 @@ function Product({ product }) {
                   src={product.image}
                   className="card-img-top p-5"
                   alt="product"
-                  style={{ height: "320px" }}
+                  style={{ height: '320px' }}
                 />
                 <div className="product-icons">
                   <Link
