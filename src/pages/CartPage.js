@@ -3,11 +3,13 @@ import CartSection from '../components/CartPage';
 import Hero from '../components/Hero';
 import StoreBcg from '../images/storeBcg.jpeg';
 
-function CartPage() {
+function CartPage(props) {
+  console.log(props);
+
   return (
     <React.Fragment>
       <Hero img={StoreBcg} />
-      <CartSection />
+      <CartSection history={props.history} />
     </React.Fragment>
   );
 }

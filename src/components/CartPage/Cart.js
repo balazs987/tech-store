@@ -4,7 +4,7 @@ import CartColumns from './CartColumns';
 import CartList from './CartList';
 import CartTotals from './CartTotals';
 
-function Cart() {
+function Cart({ history }) {
   return (
     <section className="py-5">
       <div className="container">
@@ -12,7 +12,7 @@ function Cart() {
       </div>
       <CartColumns />
       <CartList />
-      <CartTotals />
+      <CartTotals history={history} />
     </section>
   );
 }
